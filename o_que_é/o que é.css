@@ -1,0 +1,74 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    height:50vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://www.cvi-rio.org.br/site/wp-content/uploads/2015/06/Atletismo2.png');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+
+    margin:60px auto;
+}
+
+.content{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content p{
+    font-size:1.1rem;
+    line-height:2;
+    margin-bottom:25px;
+}
+
+.botao{
+    display:inline-block;
+
+    margin-top:20px;
+    padding:14px 30px;
+
+    background:#003b73;
+    color:white;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:#0055a5;
+}

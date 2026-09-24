@@ -1,0 +1,242 @@
+      body{
+      background: linear-gradient(270deg, #005ae0 5%, #bac8ff 30%, #bac8ff 76%, #005ae0 100%);
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+  }
+
+ /* ================================
+   MODALIDADES PARALÍMPICAS
+   ================================ */
+
+.modalidades {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+/* Título */
+.modalidades h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #083358;
+    margin-bottom: 40px;
+}
+
+/* GRID DOS CARDS */
+.modalidades-grid {
+    display: grid;
+
+    /* 3 cards no computador */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    width: 100%;
+}
+
+/* ================================
+   CARD INDIVIDUAL
+   ================================ */
+
+.modalidade-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+/* Efeito ao passar o mouse */
+.modalidade-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+/* ================================
+   IMAGEM
+   ================================ */
+
+.modalidade-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    display: block;
+}
+
+/* ================================
+   CONTEÚDO
+   ================================ */
+
+.modalidade-conteudo {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.modalidade-conteudo h3 {
+    margin: 0 0 12px;
+
+    color: #0F4C81;
+
+    font-size: 1.4rem;
+}
+
+.modalidade-conteudo p {
+    margin: 0 0 20px;
+
+    color: #2D3748;
+
+    line-height: 1.6;
+
+    font-size: 0.95rem;
+
+    flex: 1;
+}
+
+/* ================================
+   BOTÃO
+   ================================ */
+
+.modalidade-conteudo button {
+    width: 100%;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0F4C81;
+    color: white;
+
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+/* ================================
+   TABLET
+   ================================ */
+
+@media (max-width: 950px) {
+
+    .modalidades {
+        padding: 40px 18px;
+    }
+
+    .modalidades-grid {
+        /* 2 cards por linha */
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .modalidade-card img {
+        height: 180px;
+    }
+}
+
+
+/* ================================
+   CELULAR
+   ================================ */
+
+@media (max-width: 650px) {
+
+    .modalidades {
+        padding: 30px 15px;
+    }
+
+    .modalidades h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .modalidades-grid {
+        /* 1 card por linha */
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .modalidade-card img {
+        height: 200px;
+    }
+
+    .modalidade-conteudo {
+        padding: 18px;
+    }
+
+    .modalidade-conteudo h3 {
+        font-size: 1.3rem;
+    }
+
+    .modalidade-conteudo p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ================================
+   CELULARES PEQUENOS
+   ================================ */
+
+@media (max-width: 400px) {
+
+    .modalidades {
+        padding: 25px 12px;
+    }
+
+    .modalidades h2 {
+        font-size: 1.6rem;
+    }
+
+    .modalidade-card img {
+        height: 170px;
+    }
+
+    .modalidade-conteudo {
+        padding: 16px;
+    }
+}
+  button{
+    display: flex;
+    font-size: 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 0px 5px black;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#003b73;
+    text-align: center;
+    margin-left: 48vh;
+    transform: translate(-50%, -50%);
+  }
+
+  button a{
+    text-decoration: none;
+  }
+  
+  #titu{
+    display: flex;
+    margin-left: 82vh;
+    margin-top: 0%;
+   
+  }

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depoimentos e História</title>
+    <link rel="stylesheet" href="dep.css">
+
+  </head>
+
+  <body>
+    <div class="card-wrapper" id="wrapper">
+
+      <div class="card" id="card">
+        <img
+          src="../Imagens/Captura-de-tela-gevanildo.png"
+          alt="Gevanildo Lima"
+        />
+
+        <h2>Gevanildo Lima</h2>
+
+        <div class="overlay"></div>
+
+        <div class="links">
+          <a class="depoimentos" href="Gevanildo.html">
+            Depoimentos
+          </a>
+        </div>
+      </div>
+
+      <div class="side-panel">
+        <div class="panel-content">
+          <h1>Gevanildo da Silva Lima</h1>
+
+          <p>
+            Nasceu em 1979, na cidade de Pindoretama-CE. Em 2006, decidiu focar no atletismo como especialidade, atualmente é presidente da <b>Associação Multiesportiva Ema (AME)</b>.
+            Formado no curso de Licenciatura Plena de Educação Física depois concluiu o Curso de Gestão Esportiva com Ênfase em Treinamento Desportivo. Hoje ele é Graduado e Pos-Graduado.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      const wrapper = document.getElementById("wrapper");
+
+      wrapper.addEventListener("click", () => {
+        wrapper.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
